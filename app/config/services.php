@@ -10,7 +10,7 @@ $di->set('view', function() {
 
 $di->set('url', function() {
 	$url = new \Phalcon\Mvc\Url();
-	$url->setBaseUri('/github/space-ship-project/');
+	$url->setBaseUri('/github/space-ship-project1/');
 	return $url;
 });
 

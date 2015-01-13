@@ -6,4 +6,9 @@ class MainController extends Phalcon\Mvc\Controller
 	{
 		echo 'A spaceship is coming...';
 	}
+	
+	public function organizationAction()
+	{
+		$this->view->setLayout('organization');
+	}
 }

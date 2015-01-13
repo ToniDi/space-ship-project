@@ -26,7 +26,7 @@
 				<nav class="navbar navbar-inverse">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="#">Mission</a></li>
-						<li><a href="#">Organisation</a></li>
+						<li><a href="<?= $this->url->get(['for' => 'organization']) ?>">Organization</a></li>
 						<li><a href="#">Construction</a></li>
 						<li><a href="#">Commanding space ship...</a></li>
 						<li><a href="#">About</a></li>
@@ -34,47 +34,7 @@
 				</nav>
 			</header>
 			
-			<main class="row">
-			
-				<aside class="col-md-4 col-lg-3">
-						<ul class="nav nav-pills nav-stacked">
-							<li><a href="#">Bridge view</a></li>
-							<li><a href="#">Control centre view</a></li>
-							<li><a href="#">Wardroom view</a></li>
-							<li><a href="#">Observation room view</a></li>							
-							<li><a href="#">Crew cabin view</a></li>							
-							<li><a href="#">Auxiliary compartment view</a></li>							
-							<li><a href="#">Engine control room view</a></li>							
-						</ul>
-				</aside>
-				
-				<section class="col-md-8 col-lg-9">
-					<article>
-						<h4>The quick brown fox</h4>
-							<p>The quick brown fox jump over the lazy dog 1234567890
-								The quick brown fox jump over the lazy dog 1234567890
-								The quick brown fox jump over the lazy dog 1234567890
-								The quick brown fox jump over the lazy dog 1234567890
-								The quick brown fox jump over the lazy dog 1234567890
-								The quick brown fox jump over the lazy dog 1234567890
-								The quick brown fox jump over the lazy dog 1234567890
-							</p>
-							<p>
-								<img src="<?= $this->url->getBaseUri() ?>img/land-space-ship.jpg" class="img-responsive">
-							</p>
-					</article>
-					<article>
-						<h4>Jump over the lazy dog</h4>
-							<div>The quick brown fox jump over the lazy dog 1234567890
-								The quick brown fox jump over the lazy dog 1234567890
-								The quick brown fox jump over the lazy dog 1234567890
-								The quick brown fox jump over the lazy dog 1234567890
-								The quick brown fox jump over the lazy dog 1234567890
-							</div>
-					</article>
-				</section>
-				
-			</main>	
+			<?= $this->getContent() ?>
 			
 			<footer class="text-center">
 				*******&copy; All rights reserved********
